@@ -2,6 +2,11 @@
 "	Start Configuration
 "=====================================
 
+" The next two line is because git bash on windows flashes when enter in
+" normal mode or make a sound when a press a key esc
+set novisualbell
+set belloff=all
+
 " Enables syntax highlighing
 syntax enable
 
@@ -43,7 +48,7 @@ set numberwidth=1
 
 " Good auto indent
 set autoindent
-" set background=dark
+set background=dark
 
 " Required to keep multiple buffers open multiple buffers
 set hidden
@@ -124,6 +129,9 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 " https://victorhckinthefreeworld.com/2019/03/05/vim-gitgutter-plugin-vim-git/
 set updatetime=250
 
+" This line is to custom airline theme
+" let g:airline_theme='tomorrow'
+
 "=====================================
 "	End Custom Plugins
 "=====================================
@@ -184,4 +192,3 @@ set ttimeout
 set ttimeoutlen=1
 set ttyfast
 
-" Se agrega una nueva linea de codigo 
